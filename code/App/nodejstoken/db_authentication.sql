@@ -14,12 +14,11 @@ DROP TABLE IF EXISTS `t_users`;
 CREATE TABLE `t_users` (
   `idUser` int NOT NULL,
   `useName` varchar(255) NOT NULL,
-  `usePassword` varchar(255) NOT NULL,
-  `useSalt` varchar(255) NOT NULL
+  `usePassword` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-INSERT INTO `t_users` (`idUser`, `useName`, `usePassword`,`useSalt`) VALUES
-(1, 'john', '1234','test');
+INSERT INTO `t_users` (`idUser`, `useName`, `usePassword`) VALUES
+(1, 'john', '1234');
 
 
 ALTER TABLE `t_users`

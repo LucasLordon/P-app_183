@@ -1,25 +1,11 @@
 import mysql from "mysql2/promise";
 
-host='db'
-user='root'
-password='root'
-database='db_authentication'
-
-
-const fs = require("fs");
-
-fs.readFile("dbMpd.json", "utf-8", (err, data) => {
-  let jsonData = JSON.parse(data);
-  jsonData.forEach((mdp) => {
-    console.log(`${mdp.city} population is ${mdp.population}`);
-  });
-});
-
 const dbConfig = {
-  host: host,
-  user: user,
-  password: password,
-  database: database
+  host: 'localhost',
+  port: 6031,
+  user: 'root',
+  password: 'root',
+  database: 'db_authentication'
 };
 
 

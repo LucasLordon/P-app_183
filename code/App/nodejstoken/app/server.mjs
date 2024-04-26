@@ -22,7 +22,6 @@ app.use('/user', userRoute);
 app.use('/auth', authRoute);
 
 // Démarrage du serveur
-app.listen(8083, () => {
-    console.log('Séquence authentification, server running on port 8083');
-    console.log(generateSalt(50));
+app.listen(8084, () => {
+    console.log('Séquence authentification, server running on port 8084');
 });
